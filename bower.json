@@ -1,0 +1,31 @@
+{
+  "name": "usprawiedliwienia",
+  "version": "0.0.1",
+  "authors": [
+    "Mateusz Bagiński <cziken58@gmail.com>"
+  ],
+  "description": "Automatyczne usprawiedliwienia na librus",
+  "main": "app/content.js",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "librus",
+    "usprawiedliwienia",
+    "shit"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.3",
+    "underscore": "~1.8.2",
+    "jquery-cookie": "~1.4.1"
+  }
+}

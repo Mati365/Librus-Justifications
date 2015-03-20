@@ -1,0 +1,36 @@
+{
+    "name": "Usprawiedliwienia",
+    "description": "Automatyczne Usprawiedliwienia na librus",
+    "version": "0.1",
+    "permissions": [
+        "tabs",
+        "https://dziennik.librus.pl/przegladaj_nb/uczen",
+        "https://dziennik.librus.pl/wiadomosci/2/5"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://dziennik.librus.pl/przegladaj_nb/uczen",
+                "https://dziennik.librus.pl/wiadomosci/2/5"
+            ],
+            "js": [
+                "lib/underscore/underscore-min.js",
+                "lib/jquery/dist/jquery.min.js",
+                "lib/jquery-cookie/jquery.cookie.js",
+                "app/content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ], 
+    "background": {
+        "scripts": [
+            "lib/underscore/underscore-min.js",
+            "app/background.js"
+        ]
+    },
+    "web_accessible_resources": [
+        "lib/underscore/underscore-min.map",
+        "lib/jquery/dist/jquery.min.map"
+    ],
+    "manifest_version":2
+}
