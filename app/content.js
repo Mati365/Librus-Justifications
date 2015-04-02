@@ -64,7 +64,7 @@ var config = {
 			'wyjazdu rodzinnego', 
 			'spraw rodzinnych',
 		],
-		FOOTER 		: '\nZ poważaniem <%= parent %>.'
+		FOOTER 		: '\n<%= parent %>.'
 	}
 };
 
